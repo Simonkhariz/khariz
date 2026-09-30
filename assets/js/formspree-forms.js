@@ -1,5 +1,5 @@
 /**
- * Formspree AJAX Integration for Khariz Portfolio
+ * Formspree AJAX Integration & Email Delivery Controller for Khariz Portfolio
  * Endpoint: https://formspree.io/f/xaenvapw
  */
 (function() {
@@ -76,7 +76,6 @@
 
   // Close Framer Overlay if open
   function dismissOverlay() {
-    // Try clicking close button or dispatching escape key
     const closeBtn = document.querySelector('[data-framer-name="Close"], [aria-label="Close"], .framer-overlay-dismiss, #overlay');
     if (closeBtn) {
       closeBtn.click();
@@ -97,6 +96,39 @@
 
     try {
       const formData = new FormData(form);
+
+      // Extract all possible email, name, and message variations
+      let emailVal = formData.get('email') || formData.get('Email');
+      let nameVal = formData.get('name') || formData.get('Name');
+      let messageVal = formData.get('message') || formData.get('Message') || formData.get('Project Details') || formData.get('project_details');
+
+      // Fallback: search inputs manually if FormData didn't catch them
+      if (!emailVal) {
+        const emailInput = form.querySelector('input[type="email"], input[name*="mail" i]');
+        if (emailInput && emailInput.value) emailVal = emailInput.value;
+      }
+      if (!nameVal) {
+        const nameInput = form.querySelector('input[name*="name" i], input[placeholder*="Jane" i]');
+        if (nameInput && nameInput.value) nameVal = nameInput.value;
+      }
+      if (!messageVal) {
+        const msgInput = form.querySelector('textarea, input[name*="message" i], input[name*="detail" i]');
+        if (msgInput && msgInput.value) messageVal = msgInput.value;
+      }
+
+      // CRITICAL FOR FORMSPREE EMAIL DELIVERY:
+      // Formspree requires lowercase "email" and "_replyto" to send the notification email to the owner!
+      if (emailVal) {
+        formData.set('email', emailVal);
+        formData.set('_replyto', emailVal);
+      }
+      if (nameVal) {
+        formData.set('name', nameVal);
+      }
+      if (messageVal) {
+        formData.set('message', messageVal);
+      }
+
       const endpoint = form.action && form.action.includes('formspree.io') ? form.action : FORMSPREE_ENDPOINT;
 
       const response = await fetch(endpoint, {
@@ -108,7 +140,7 @@
       });
 
       if (response.ok) {
-        showToast('Thank you! Your submission has been received successfully.', 'success');
+        showToast('Thank you! Your message has been sent successfully.', 'success');
         form.reset();
 
         // If inside a modal/overlay, close it after 1.5 seconds
