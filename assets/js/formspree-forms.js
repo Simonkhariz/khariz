@@ -178,7 +178,41 @@
   }
 
   // Initialize
+  
+  // Smooth scroll navigation handler for "Get in touch" and "Start a project"
+  function setupNavScroll() {
+    document.addEventListener('click', function(e) {
+      const target = e.target.closest('a, button');
+      if (!target) return;
+
+      const text = (target.textContent || '').trim().toLowerCase();
+      const href = (target.getAttribute('href') || '').toLowerCase();
+
+      // "Get in touch" -> Scroll to "Let's connect" / Contact section (#contact)
+      if (text.includes('get in touch') || text.includes('contact') || href.includes('#contact')) {
+        // If it's the submit button of a form, let form submit handler handle it
+        if (target.type === 'submit' || target.closest('form')) return;
+
+        const contactEl = document.getElementById('contact') || document.querySelector('[data-framer-name="Contact"]') || document.querySelector('form[data-framer-name="Contact Form"]');
+        if (contactEl) {
+          e.preventDefault();
+          contactEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      // "Start a project" -> Scroll to Pricing section (#pricing)
+      if (text.includes('start a project') || href.includes('#pricing')) {
+        const pricingEl = document.getElementById('pricing') || document.querySelector('[data-framer-name="Pricing"]');
+        if (pricingEl) {
+          e.preventDefault();
+          pricingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+  
   function init() {
+    setupNavScroll();
     injectStyles();
     setupFormInterceptor();
   }
