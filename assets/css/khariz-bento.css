@@ -1,0 +1,593 @@
+
+/* Space Grotesk Khariz Logo Text - Black Footer Logo */
+.khariz-logo-text,
+.framer-8gzni.khariz-logo-text,
+[data-framer-name="Khariz Logo"] {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--token-31adf499-352a-4206-8797-2d572658ec93, #111110) !important;
+  background-image: none !important;
+  background: transparent !important;
+  display: inline-block !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: none !important;
+}
+footer .khariz-logo-text,
+footer [data-framer-name="Khariz Logo"],
+.framer-v-11nihdz .khariz-logo-text {
+  color: #111110 !important;
+}
+
+
+
+
+
+
+footer .framer-8gzni,
+.framer-v-11nihdz .framer-8gzni {
+  color: #ffffff !important;
+}
+
+.framer-8gzni svg {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible !important;
+}
+
+.framer-8gzni text {
+  font-family: 'Geist', 'Geist Placeholder', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  fill: currentColor !important;
+}
+
+.khariz-bento-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px 80px;
+  background-color: var(--token-6510e50e-f02f-481a-9908-6bd32d8c94ec, #f5f5f2);
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+  scroll-margin-top: 80px;
+}
+
+.khariz-bento-container {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  box-sizing: border-box;
+}
+
+/* Section Header */
+.khariz-bento-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.khariz-bento-title {
+  font-family: 'Geist', 'Geist Placeholder', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--token-31adf499-352a-4206-8797-2d572658ec93, #111110);
+  margin: 0;
+}
+
+.khariz-bento-subtitle {
+  font-family: 'Geist', 'Geist Placeholder', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--token-94266e94-d5b5-4766-9ff1-293f92418bbc, #73736e);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* Filter Buttons matching site pills */
+.khariz-bento-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 6px;
+  background: rgba(17, 17, 16, 0.05);
+  border: 1px solid rgba(17, 17, 16, 0.08);
+  border-radius: 999px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.khariz-filter-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 20px;
+  border-radius: 999px;
+  font-family: 'Geist', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--token-94266e94-d5b5-4766-9ff1-293f92418bbc, #73736e);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.khariz-filter-btn:hover {
+  color: var(--token-31adf499-352a-4206-8797-2d572658ec93, #111110);
+}
+
+.khariz-filter-btn.active {
+  background: var(--token-31adf499-352a-4206-8797-2d572658ec93, #111110);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(17, 17, 16, 0.18);
+}
+
+/* Grid layout matching site sections */
+.khariz-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+/* Card Pattern: Matching the About Section Card */
+.khariz-bento-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10.5;
+  background-color: var(--token-360e7a9f-1c3f-4207-b20c-b47db9428e33, #ffffff);
+  border: 5px solid var(--token-360e7a9f-1c3f-4207-b20c-b47db9428e33, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.06), 0px 10px 30px 0px rgba(0, 0, 0, 0.09), 0px 30px 60px 0px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.khariz-bento-card:hover,
+.khariz-bento-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.08), 0px 16px 40px 0px rgba(0, 0, 0, 0.12), 0px 40px 70px 0px rgba(0, 0, 0, 0.1);
+}
+
+.khariz-bento-card.hidden {
+  display: none !important;
+}
+
+/* Image fills the card with crystal-clear unblurred rendering */
+.khariz-card-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 11px;
+  background: #ecece7;
+}
+
+.khariz-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: 11px;
+  filter: none !important;
+  -webkit-filter: none !important;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.khariz-bento-card:hover .khariz-card-img {
+  transform: scale(1.03);
+}
+
+/* Text Overlay: Crisp gradient at bottom without blur */
+.khariz-card-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 11px;
+  background: linear-gradient(180deg, rgba(17, 17, 16, 0) 35%, rgba(17, 17, 16, 0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  opacity: 0; pointer-events: none; transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.khariz-bento-card:hover .khariz-card-overlay,
+.khariz-bento-card:focus-visible .khariz-card-overlay,
+.khariz-bento-card.active-touch .khariz-card-overlay {
+  opacity: 1;
+  pointer-events: auto;
+  background: linear-gradient(180deg, rgba(17, 17, 16, 0.15) 10%, rgba(17, 17, 16, 0.94) 100%);
+}
+
+.khariz-view-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #111110;
+  font-family: 'Geist', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transform: translateY(-6px) scale(0.95);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.khariz-bento-card:hover .khariz-view-badge,
+.khariz-bento-card:focus-visible .khariz-view-badge,
+.khariz-bento-card.active-touch .khariz-view-badge {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.khariz-overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.khariz-category-chip {
+  font-family: 'Geist', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--token-b2c74e9e-09c6-4c18-ac5f-277bbf7e949f, #f05a3c);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.khariz-card-title {
+  font-family: 'Geist', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.25;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+.khariz-card-desc {
+  font-family: 'Geist', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.khariz-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.khariz-tech-badge {
+  font-family: 'Geist', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2.5px 7.5px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  white-space: nowrap;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* ==========================================================================
+   Lightbox Modal
+   ========================================================================== */
+.khariz-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.khariz-lightbox.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.khariz-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 16, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.khariz-lightbox-container {
+  position: relative;
+  z-index: 10;
+  width: 90vw;
+  max-width: 1080px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: kharizZoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes kharizZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.khariz-lightbox-close {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.khariz-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.08);
+}
+
+.khariz-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 20;
+}
+
+.khariz-lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.khariz-lightbox-prev {
+  left: -58px;
+}
+
+.khariz-lightbox-next {
+  right: -58px;
+}
+
+.khariz-lightbox-body {
+  width: 100%;
+  background: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.khariz-lightbox-img-wrapper {
+  width: 100%;
+  max-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f2;
+  overflow: hidden;
+  border-radius: 11px 11px 0 0;
+}
+
+.khariz-lightbox-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  display: block;
+}
+
+.khariz-lightbox-details {
+  padding: 22px 26px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.khariz-lightbox-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.khariz-lightbox-counter {
+  font-family: 'Geist', sans-serif;
+  font-size: 12px;
+  color: #9b9b95;
+  font-weight: 500;
+}
+
+.khariz-lightbox-title {
+  font-family: 'Geist', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111110;
+  margin: 0;
+}
+
+.khariz-lightbox-desc {
+  font-family: 'Geist', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #73736e;
+  margin: 0;
+}
+
+.khariz-lightbox-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.khariz-lightbox-tech .khariz-tech-badge {
+  background: #f5f5f2;
+  color: #111110;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   Responsive Mobile Optimization
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .khariz-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .khariz-bento-title {
+    font-size: 38px;
+  }
+  .khariz-lightbox-prev {
+    left: 12px;
+  }
+  .khariz-lightbox-next {
+    right: 12px;
+  }
+}
+
+@media (max-width: 680px) {
+  .khariz-bento-section {
+    padding: 40px 16px 60px;
+  }
+  .khariz-bento-container {
+    gap: 24px;
+  }
+  .khariz-bento-title {
+    font-size: 30px;
+  }
+  .khariz-bento-subtitle {
+    font-size: 14.5px;
+  }
+
+  /* Filter pill horizontal scroll bar on mobile */
+  .khariz-bento-filters {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 6px 8px;
+    border-radius: 999px;
+    gap: 6px;
+  }
+  .khariz-bento-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .khariz-filter-btn {
+    padding: 8px 15px;
+    font-size: 12.5px;
+    flex-shrink: 0;
+  }
+
+  .khariz-bento-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .khariz-bento-card {
+    aspect-ratio: 16 / 11;
+  }
+
+  .khariz-card-overlay {
+    opacity: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgba(17, 17, 16, 0) 35%, rgba(17, 17, 16, 0.9) 100%);
+    padding: 14px 16px;
+  }
+
+  .khariz-card-title {
+    font-size: 17px;
+  }
+
+  .khariz-card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
